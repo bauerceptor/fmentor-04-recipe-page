@@ -33,6 +33,7 @@
 body {
     font-family: var(--font-family-paragraph);
     color: var(--color-text-para);
+    background-color: var(--color-info-bg);
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -40,10 +41,12 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 90%;
     height: auto;
+
     border-radius: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 1.5rem 0;
+
 }
 
 h1,
@@ -51,6 +54,7 @@ h2,
 h3 {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-heading);
+    margin-left: 1rem;
 }
 
 h1 {
@@ -70,11 +74,14 @@ h3 {
     font-size: 1.3rem;
 }
 
+
 p {
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
+    margin-left: 1rem;
 }
+
 
 li::marker {
     color: var(--color-text-heading);
@@ -89,8 +96,11 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100rem;
+    height: 110rem;
     width: 40rem;
+    background-color: var(--color-bg);
+    border-radius: 1rem;
+    margin: 2rem 0;
 }
 
 .preparation {
@@ -101,7 +111,7 @@ hr {
 
 .preparation>li {
     padding-left: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 3rem;
 }
 
 .preparation>li::marker {
@@ -110,12 +120,12 @@ hr {
 
 .ingredients>li {
     padding-left: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 3rem;
 }
 
 .instructions>li {
     padding-left: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 3rem;
 }
 
 .instructions>li::marker {
@@ -186,6 +196,10 @@ td {
         width: 25rem;
     }
 
+    img {
+        margin-inline: 1rem;
+    }
+
     h1 {
         font-size: 2.3rem;
         line-height: 1;
@@ -203,6 +217,10 @@ td {
     .container {
         height: auto;
         width: 20rem;
+    }
+
+    img {
+        margin-inline: 1rem;
     }
 
     h1 {
