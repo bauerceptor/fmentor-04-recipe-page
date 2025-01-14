@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --color-bg: hsl(0, 0%, 100%);
+
+    --color-table-light-1: hsl(30, 54%, 90%);
+    --color-table-light-2: hsl(30, 18%, 87%);
+    --color-text-para: hsl(30, 10%, 34%);
+    --color-text-title: hsl(24, 5%, 18%);
+    --color-text-heading: hsl(14, 45%, 36%);
+    --color-text-heading-lower: hsl(332, 51%, 32%);
+    --color-info-bg: hsl(330, 100%, 98%);
+
+    --font-family-heading: 'Young Serif', serif;
+    --font-weight-heading: 400;
+    --font-family-paragraph: 'Outfit', sans-serif;
+    --font-weight-table-bold: 700;
+    --font-weight-para-bold: 600;
+    --font-weight-para-text: 400;
+
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-paragraph);
+    color: var(--color-text-para);
+    display: grid;
+    place-content: center;
+    min-width: 100vw;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-family-heading);
+}
+
+h1 {
+    color: var(--color-text-title);
+    font-size: 3rem;
+}
+
+h2 {
+    color: var(--color-text-heading);
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--color-text-heading-lower);
+    font-size: 1.3rem;
+}
